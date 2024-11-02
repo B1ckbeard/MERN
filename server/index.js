@@ -17,12 +17,6 @@ const DB_NAME = process.env.DB_NAME
 app.use(cors()) // запросы с разных ip-адресов
 app.use(express.json())
 
-/*
-app.get('/', (req, res) => {
-  return res.json({message: 'All is fine'})
-})
-*/
-
 // Routes
 app.use('/api/auth', authRoute)
 
